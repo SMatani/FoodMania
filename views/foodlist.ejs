@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <title>
+        FoodMenu
+    </title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<div >
+<h1>Menu</h1>
+<form>
+    <table class="form-class" align="center">
+        <tr>
+            <th>
+                Sr. no.
+            </th>
+            <th>
+                Food Item
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Update
+            </th>
+            <th>
+                Delete
+            </th>
+        </tr>
+
+        <% if(data.length!=0){ var i=1; data.forEach(function(data){ %>
+            <tr>
+                <td>
+                    <%=i; %>
+                </td>
+                <td>
+                    <%=data.name %>
+                </td>
+                <td>
+                    <%=data.price %>
+                </td>
+                <td><a href="/UpdateItem/<%=data.name%>">Edit</a></td>
+                <td><a href="/delete/<%=data.name%>">Delete</a></td>
+            </tr>
+            <% i++; }) %>
+                <% } else{ %>
+                    <tr>
+                        <td colspan="7">No Data Found</td>
+                    </tr>
+                    <% } %>
+                        <tr>
+                            <td><a href="AddItem">Add Item</a></td>
+                        </tr>
+    </table>
+</div>
+
+</html>

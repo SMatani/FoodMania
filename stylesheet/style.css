@@ -1,0 +1,28 @@
+.form-class{
+background-color: cornflowerblue;
+font-weight: bold;
+color: navy;
+text-align: center;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+td{
+    width: 200px;
+}
+
+tr{
+    height: 50px;
+}
+
+th{
+    color: black;
+
+}
+
+h1 {
+    text-align: center;
+}
+
