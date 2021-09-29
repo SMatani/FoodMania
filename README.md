@@ -17,4 +17,4 @@ Steps to execute the application:
 4.Execute: node app.js
 5.You'll get the message on the terminal : Server is listening on port 3000(Port can be changed in app.js file line no. 115)
 6.Open a browser and browse http://localhost:3000
-7.Go through the FoodManiaFunctionalDocument to understand the flow of the application
+7.Go through the FoodManiaFunctionalDocument.pdf to understand the flow of the application
